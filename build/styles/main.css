@@ -1,0 +1,223 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  color: #212529;
+  background-color: #f8f9fa;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 60px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+.navbar {
+  padding: 1rem 0;
+  background-color: #1a1a1a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.navbar .nav-link {
+  color: #fff;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffc107;
+}
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+}
+.hero-section {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../../img/hero-bg.jpg') center center / cover no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+.hero-section .container {
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-section p.lead {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+.hero-section .btn {
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  background: linear-gradient(to righht, #00c6ff, #0072ff);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-section .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
+}
+.busca-section {
+  background-color: #f8f9fa;
+}
+.busca-section h2 {
+  color: #007bff;
+}
+.busca-section .form-control {
+  border-radius: 0.5rem;
+}
+.busca-section .btn {
+  border-radius: 0.5rem;
+}
+.destinos-section h2 {
+  color: #007bff;
+}
+.destinos-section .card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.destinos-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.destinos-section .card .card-title {
+  font-size: 1.25rem;
+  color: #212529;
+}
+.destinos-section .card .card-text {
+  color: #6c757d;
+}
+.destinos-section .card .btn {
+  margin-top: 0.5rem;
+}
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #ffc107;
+}
+.pacotes-section h2 {
+  color: #007bff;
+}
+.pacotes-section .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pacotes-section .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.pacotes-section .card .card-title {
+  color: #212529;
+  font-size: 1.25rem;
+}
+.pacotes-section .card .card-text {
+  color: #6c757d;
+}
+.pacotes-section .card .btn {
+  border-radius: 0.5remm;
+}
+.como-funciona-section h2 {
+  color: #007bff;
+}
+.como-funciona-section i {
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+.como-funciona-section i:hover {
+  transition: transform 0.3s ease;
+}
+.como-funciona-section h5 {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.como-funciona-section p {
+  color: #6c757d;
+}
+.depoimentos-section h2 {
+  color: #007bff;
+}
+.depoimentos-section .card {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+.depoimentos-section .card .card-text {
+  font-style: italic;
+  color: #6c757d;
+}
+.depoimentos-section .card img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.depoimentos-section .card h6 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.depoimentos-section .card small {
+  color: #aaa;
+}
+.modal-content {
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.modal-content .modal-header {
+  border-bottom: none;
+}
+.modal-content .btn-close {
+  background: transparent;
+  font-size: 1.2rem;
+}
+.modal-content .form-label {
+  font-weight: 600;
+}
+.modal-content .btn {
+  border-radius: 0.5rem;
+}
+.contato-section h2 {
+  color: #007bff;
+}
+.contato-section .form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #a1a8ae;
+  box-shadow: none;
+}
+.contato-section .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.2);
+}
+.contato-section textarea {
+  resize: none;
+}
+.contato-section .btn {
+  padding: 0.6rem 2.5rem;
+  border-radius: 0.5rem;
+}

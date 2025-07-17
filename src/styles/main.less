@@ -1,0 +1,304 @@
+// Variáveis //
+@primary: #007bff;
+@secondary: #6c757d;
+@success: #28a745;
+@danger: #dc3545;
+@warning: #ffc107;
+@info: #17a2b8;
+@light: #f8f9fa;
+@dark: #212529;
+
+@white: #fff;
+@gray: #6c757d;
+@bg-dark: #1a1a1a;
+@text-muted: #aaa;
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+
+// Estilos Globais //
+body {
+    font-family: @font-family;
+    color: @dark;
+    background-color: @light;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+
+// Header / Navbar //
+.navbar {
+    padding: 1rem 0;
+    background-color: @bg-dark;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+    .nav-link {
+        color: @white;
+        margin: 0 10px;
+        transition: all 0.3s ease;
+
+        &:hover,
+        &.active {
+            color: @warning;
+        }
+    }
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+}
+
+// Hero Section //
+.hero-section {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+    url('../../img/hero-bg.jpg') center center/cover no-repeat;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+
+    .container {
+        z-index: 2;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    p.lead {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+        padding: 0.75rem 2rem;
+        border-radius: 30px;
+        background: linear-gradient(to righht, #00c6ff, #0072ff);
+        border: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
+        }
+    }
+}
+
+// Busca de Viagem //
+.busca-section {
+    background-color: @light;
+
+    h2 {
+        color: @primary;
+    }
+
+    .form-control {
+        border-radius: 0.5rem;
+    }
+
+    .btn {
+        border-radius: 0.5rem;
+    }
+}
+
+// Destinos em Destaque //
+.destinos-section {
+    h2 {
+        color: @primary;
+    }
+
+    .card {
+        border-radius: 12px;
+        transition: transform 0.3s ease,box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            color: @dark;
+        }
+
+        .card-text {
+            color: @gray;
+        }
+
+        .btn {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+// Footer //
+footer {
+    background-color: @bg-dark;
+    color: @white;
+
+    a {
+        color: @white;
+
+        &:hover {
+            color: @warning;
+        }
+    }
+}
+
+// Pacotes //
+.pacotes-section {
+    h2 {
+        color: @primary;
+    }
+
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-title {
+            color: @dark;
+            font-size: 1.25rem;
+        }
+
+        .card-text {
+            color: @gray;
+        }
+
+        .btn {
+            border-radius: 0.5remm;
+        }
+    }
+}
+
+// Como Funciona //
+.como-funciona-section {
+    h2 {
+        color: @primary;
+    }
+
+    i {
+        color: @primary;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transition: transform 0.3s ease;
+        }
+    }
+
+    h5 {
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+
+    p {
+        color: @gray;
+    }
+}
+
+// Depoimentos //
+.depoimentos-section {
+    h2 {
+        color: @primary;
+    }
+
+    .card {
+        background-color: @white;
+        border: none;
+        border-radius: 0.75rem;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+
+        .card-text {
+            font-style: italic;
+            color: @gray;
+        }
+
+        img {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h6 {
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        small {
+            color: @text-muted;
+        }
+    }
+}
+
+// Modal de Login //
+.modal-content {
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .btn-close {
+        background: transparent;
+        font-size: 1.2rem;
+    }
+
+    .form-label {
+        font-weight: 600;
+    }
+
+    .btn {
+        border-radius: 0.5rem;
+    }
+}
+
+// Formulário de Contato //
+.contato-section {
+    h2 {
+        color: @primary;
+    }
+
+    .form-control {
+        border-radius: 0.5rem;
+        border: 1px solid lighten(@gray, 20%);
+        box-shadow: none;
+        &:focus {
+            border-color: @primary;
+            box-shadow: 0 0 0 0.2rem fade(@primary, 20%);
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .btn {
+        padding: 0.6rem 2.5rem;
+        border-radius: 0.5rem;
+    }
+}
